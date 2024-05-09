@@ -5,19 +5,19 @@ setlocal enabledelayedexpansion
 cls
 goto notice
 :notice
-echo Èç¹ûÕâÐ©ÏÂÃæÕâÐ©ÎÄ¼þÏÂÔØÊ§°Ü,¿ÉÒÔÊÖ¶¯·ÃÎÊÍøÖ·ÏÂÔØ±£´æÖÁÍ¬¼¶Ä¿Â¼
+echo ï¿½ï¿½ï¿½ï¿½ï¿½Ð©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð©ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½Ö¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½Ø±ï¿½ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½Ä¿Â¼
 
-echo https://www.baipiao.eu.org/cloudflare/colo Áí´æÎª colo.txt
-echo https://www.baipiao.eu.org/cloudflare/url Áí´æÎª url.txt
-echo https://www.baipiao.eu.org/cloudflare/ips-v4 Áí´æÎª ips-v4.txt
-echo https://www.baipiao.eu.org/cloudflare/ips-v6 Áí´æÎª ips-v6.txt
+echo https://www.manx98.shop/colo.txt ï¿½ï¿½ï¿½ï¿½Îª colo.txt
+echo https://www.manx98.shop/url.txt ï¿½ï¿½ï¿½ï¿½Îª url.txt
+echo https://www.manx98.shop/ips-v4.txt ï¿½ï¿½ï¿½ï¿½Îª ips-v4.txt
+echo https://www.manx98.shop/ips-v6.txt ï¿½ï¿½ï¿½ï¿½Îª ips-v6.txt
 goto datacheck
 
 :datacheck
-if not exist "colo.txt" echo ´Ó·þÎñÆ÷ÏÂÔØÊý¾ÝÖÐÐÄÐÅÏ¢ colo.txt&curl --retry 2 -s https://www.baipiao.eu.org/cloudflare/colo -o colo.txt&goto datacheck
-if not exist "url.txt" echo ´Ó·þÎñÆ÷ÏÂÔØ²âËÙÎÄ¼þµØÖ· url.txt&curl --retry 2 -s https://www.baipiao.eu.org/cloudflare/url -o url.txt&goto datacheck
-if not exist "ips-v4.txt" echo ´Ó·þÎñÆ÷ÏÂÔØIPV4Êý¾Ý ips-v4.txt&curl --retry 2 -s https://www.baipiao.eu.org/cloudflare/ips-v4 -o ips-v4.txt&goto datacheck
-if not exist "ips-v6.txt" echo ´Ó·þÎñÆ÷ÏÂÔØIPV6Êý¾Ý ips-v6.txt&curl --retry 2 -s https://www.baipiao.eu.org/cloudflare/ips-v6 -o ips-v6.txt&goto datacheck
+if not exist "colo.txt" echo ï¿½Ó·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ colo.txt&curl --retry 2 -s https://www.manx98.shop/colo.txt -o colo.txt&goto datacheck
+if not exist "url.txt" echo ï¿½Ó·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Ö· url.txt&curl --retry 2 -s https://www.manx98.shop/url.txt -o url.txt&goto datacheck
+if not exist "ips-v4.txt" echo ï¿½Ó·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½IPV4ï¿½ï¿½ï¿½ï¿½ ips-v4.txt&curl --retry 2 -s https://www.manx98.shop/ips-v4.txt -o ips-v4.txt&goto datacheck
+if not exist "ips-v6.txt" echo ï¿½Ó·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½IPV6ï¿½ï¿½ï¿½ï¿½ ips-v6.txt&curl --retry 2 -s https://www.manx98.shop/ips-v6.txt -o ips-v6.txt&goto datacheck
 set /a n=0
 for /f "tokens=1 delims=/" %%i in (url.txt) do (
 if !n! EQU 0 set domain=%%i&set /a n+=1
@@ -31,50 +31,50 @@ cls
 goto main
 
 :main
-title CFÓÅÑ¡IP
+title CFï¿½ï¿½Ñ¡IP
 set /a menu=0
-echo 1. IPV4ÓÅÑ¡(TLS)&echo 2. IPV4ÓÅÑ¡&echo 3. IPV6ÓÅÑ¡(TLS)&echo 4. IPV6ÓÅÑ¡&echo 5. µ¥IP²âËÙ(TLS)&echo 6. µ¥IP²âËÙ&echo 7. Çå¿Õ»º´æ&echo 8. ¸üÐÂÊý¾Ý&echo 0. ÍË³ö&echo.
-set /p menu=ÇëÑ¡Ôñ²Ëµ¥(Ä¬ÈÏ%menu%):
+echo 1. IPV4ï¿½ï¿½Ñ¡(TLS)&echo 2. IPV4ï¿½ï¿½Ñ¡&echo 3. IPV6ï¿½ï¿½Ñ¡(TLS)&echo 4. IPV6ï¿½ï¿½Ñ¡&echo 5. ï¿½ï¿½IPï¿½ï¿½ï¿½ï¿½(TLS)&echo 6. ï¿½ï¿½IPï¿½ï¿½ï¿½ï¿½&echo 7. ï¿½ï¿½Õ»ï¿½ï¿½ï¿½&echo 8. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½&echo 0. ï¿½Ë³ï¿½&echo.
+set /p menu=ï¿½ï¿½Ñ¡ï¿½ï¿½Ëµï¿½(Ä¬ï¿½ï¿½%menu%):
 if %menu%==0 exit
-if %menu%==1 title IPV4ÓÅÑ¡(TLS)&set ips=ipv4&set filename=ips-v4.txt&set tls=1&goto bettercloudflareip
-if %menu%==2 title IPV4ÓÅÑ¡&set ips=ipv4&set filename=ips-v4.txt&set tls=0&goto bettercloudflareip
-if %menu%==3 title IPV6ÓÅÑ¡(TLS)&set ips=ipv6&set filename=ips-v6.txt&set tls=1&goto bettercloudflareip
-if %menu%==4 title IPV6ÓÅÑ¡&set ips=ipv6&set filename=ips-v6.txt&set tls=0&goto bettercloudflareip
-if %menu%==5 title µ¥IP²âËÙ(TLS)&call :singlehttps&goto main
-if %menu%==6 title µ¥IP²âËÙ&call :singlehttp&goto main
-if %menu%==7 del rtt.txt data.txt CR.txt CRLF.txt cut.txt speed.txt > nul 2>&1&RD /S /Q rtt > nul 2>&1&cls&echo »º´æÒÑ¾­Çå¿Õ&goto main
+if %menu%==1 title IPV4ï¿½ï¿½Ñ¡(TLS)&set ips=ipv4&set filename=ips-v4.txt&set tls=1&goto bettercloudflareip
+if %menu%==2 title IPV4ï¿½ï¿½Ñ¡&set ips=ipv4&set filename=ips-v4.txt&set tls=0&goto bettercloudflareip
+if %menu%==3 title IPV6ï¿½ï¿½Ñ¡(TLS)&set ips=ipv6&set filename=ips-v6.txt&set tls=1&goto bettercloudflareip
+if %menu%==4 title IPV6ï¿½ï¿½Ñ¡&set ips=ipv6&set filename=ips-v6.txt&set tls=0&goto bettercloudflareip
+if %menu%==5 title ï¿½ï¿½IPï¿½ï¿½ï¿½ï¿½(TLS)&call :singlehttps&goto main
+if %menu%==6 title ï¿½ï¿½IPï¿½ï¿½ï¿½ï¿½&call :singlehttp&goto main
+if %menu%==7 del rtt.txt data.txt CR.txt CRLF.txt cut.txt speed.txt > nul 2>&1&RD /S /Q rtt > nul 2>&1&cls&echo ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½&goto main
 if %menu%==8 del colo.txt url.txt ips-v4.txt ips-v6.txt > nul 2>&1&cls&goto notice
 cls
 goto main
 
 :singlehttps
 set /a port=443
-set /p ip=ÇëÊäÈëÐèÒª²âËÙµÄIP:
-set /p port=ÇëÊäÈëÐèÒª²âËÙµÄ¶Ë¿Ú(Ä¬ÈÏ%port%):
-echo ÕýÔÚ²âËÙ !ip! ¶Ë¿Ú !port!
+set /p ip=ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½Ùµï¿½IP:
+set /p port=ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ÙµÄ¶Ë¿ï¿½(Ä¬ï¿½ï¿½%port%):
+echo ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ !ip! ï¿½Ë¿ï¿½ !port!
 for /f "delims=" %%i in ('curl --resolve !domain!:!port!:!ip! "https://!domain!:!port!/!file!" -o nul --connect-timeout 5 --max-time 15 -w %%{speed_download}') do (
 set /a speed_download=%%i/1024
-cls&echo !ip! Æ½¾ùËÙ¶È !speed_download! kB/s
+cls&echo !ip! Æ½ï¿½ï¿½ï¿½Ù¶ï¿½ !speed_download! kB/s
 )
 goto :eof
 
 :singlehttp
 set /a port=80
-set /p ip=ÇëÊäÈëÐèÒª²âËÙµÄIP:
-set /p port=ÇëÊäÈëÐèÒª²âËÙµÄ¶Ë¿Ú(Ä¬ÈÏ%port%):
-echo ÕýÔÚ²âËÙ !ip! ¶Ë¿Ú !port!
+set /p ip=ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½Ùµï¿½IP:
+set /p port=ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ÙµÄ¶Ë¿ï¿½(Ä¬ï¿½ï¿½%port%):
+echo ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ !ip! ï¿½Ë¿ï¿½ !port!
 for /f "delims=" %%i in ('echo !ip! ^| find /c /v ":"') do (
 set /a ipmode=%%i
 )
 if !ipmode! EQU 0 (
 for /f "delims=" %%i in ('curl -x [!ip!]:!port! "http://!domain!:!port!/!file!" -o nul --connect-timeout 5 --max-time 15 -w %%{speed_download}') do (
 set /a speed_download=%%i/1024
-cls&echo !ip! Æ½¾ùËÙ¶È !speed_download! kB/s
+cls&echo !ip! Æ½ï¿½ï¿½ï¿½Ù¶ï¿½ !speed_download! kB/s
 )
 ) else (
 for /f "delims=" %%i in ('curl -x !ip!:!port! "http://!domain!:!port!/!file!" -o nul --connect-timeout 5 --max-time 15 -w %%{speed_download}') do (
 set /a speed_download=%%i/1024
-cls&echo !ip! Æ½¾ùËÙ¶È !speed_download! kB/s
+cls&echo !ip! Æ½ï¿½ï¿½ï¿½Ù¶ï¿½ !speed_download! kB/s
 )
 )
 goto :eof
@@ -82,11 +82,11 @@ goto :eof
 :bettercloudflareip
 set /a tasknum=10
 set /a bandwidth=1
-set /p bandwidth=ÇëÉèÖÃÆÚÍûµÄ´ø¿í´óÐ¡(Ä¬ÈÏ×îÐ¡%bandwidth%,µ¥Î» Mbps):
-set /p tasknum=ÇëÉèÖÃRTT²âÊÔ½ø³ÌÊý(Ä¬ÈÏ%tasknum%,×î´ó50):
+set /p bandwidth=ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä´ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡(Ä¬ï¿½ï¿½ï¿½ï¿½Ð¡%bandwidth%,ï¿½ï¿½Î» Mbps):
+set /p tasknum=ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½RTTï¿½ï¿½ï¿½Ô½ï¿½ï¿½ï¿½ï¿½ï¿½(Ä¬ï¿½ï¿½%tasknum%,ï¿½ï¿½ï¿½50):
 if %bandwidth% EQU 0 (set /a bandwidth=1)
-if %tasknum% EQU 0 (set /a tasknum=10&echo ½ø³ÌÊý²»ÄÜÎª0,×Ô¶¯ÉèÖÃÎªÄ¬ÈÏÖµ)
-if %tasknum% GTR 50 (set /a tasknum=50&echo ³¬¹ý×î´ó½ø³ÌÏÞÖÆ,×Ô¶¯ÉèÖÃÎª×î´óÖµ)
+if %tasknum% EQU 0 (set /a tasknum=10&echo ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îª0,ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ÎªÄ¬ï¿½ï¿½Öµ)
+if %tasknum% GTR 50 (set /a tasknum=50&echo ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½Öµ)
 set /a speed=bandwidth*128
 set /a startH=%time:~0,2%
 if %time:~3,1% EQU 0 (set /a startM=%time:~4,1%) else (set /a startM=%time:~3,2%)
@@ -97,10 +97,10 @@ exit
 :start
 del rtt.txt data.txt CR.txt CRLF.txt cut.txt speed.txt > nul 2>&1
 RD /S /Q rtt > nul 2>&1
-if not exist "RTT.bat" echo µ±Ç°³ÌÐò²»ÍêÕû&echo ÇëÖØÐÂÏÂÔØRelease°æ±¾: https://github.com/badafans/better-cloudflare-ip/releases&pause > nul&exit
-if not exist "CR2CRLF.exe" echo µ±Ç°³ÌÐò²»ÍêÕû&echo ÇëÖØÐÂÏÂÔØRelease°æ±¾: https://github.com/badafans/better-cloudflare-ip/releases&pause > nul&exit
+if not exist "RTT.bat" echo ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½&echo ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Releaseï¿½æ±¾: https://github.com/badafans/better-cloudflare-ip/releases&pause > nul&exit
+if not exist "CR2CRLF.exe" echo ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½&echo ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Releaseï¿½æ±¾: https://github.com/badafans/better-cloudflare-ip/releases&pause > nul&exit
 set /a n=0
-if !ips! EQU ipv4 (echo ÕýÔÚÉú³É !ips!&goto getv4) else (echo ÕýÔÚÉú³É !ips!&goto getv6)
+if !ips! EQU ipv4 (echo ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ !ips!&goto getv4) else (echo ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ !ips!&goto getv6)
 
 :getv4
 for /f "delims=" %%i in (%filename%) do (
@@ -192,7 +192,7 @@ set /a n=1
 for /f "tokens=1 delims==" %%i in ('set ^| findstr =anycastip') do (
 set %%i=
 )
-title RTT²âÊÔÖÐ
+title RTTï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 goto rtttest
 
 :rtttest
@@ -202,29 +202,29 @@ if !n! EQU !tasknum! (goto rttstatus) else (set /a n=n+1&goto rtttest)
 :rttstatus
 for /f "delims=" %%i in ('dir rtt /o:-s /b^| findstr txt^| find /c /v ""') do (
 set /a status=%%i
-if !status! NEQ 0 (echo %time:~0,8% µÈ´ýRTT²âÊÔ½áÊø,Ê£Óà½ø³ÌÊý !status!&timeout /T 1 /NOBREAK > nul&goto rttstatus) else (echo %time:~0,8% RTT²âÊÔÍê³É)
+if !status! NEQ 0 (echo %time:~0,8% ï¿½È´ï¿½RTTï¿½ï¿½ï¿½Ô½ï¿½ï¿½ï¿½,Ê£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ !status!&timeout /T 1 /NOBREAK > nul&goto rttstatus) else (echo %time:~0,8% RTTï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
 )
 for /f "delims=" %%i in ('dir rtt /o:-s /b^| findstr log^| find /c /v ""') do (
 set /a status=%%i
 if !status! NEQ 0 (
 copy rtt\*.log rtt.txt>nul
 ) else (
-echo µ±Ç°ËùÓÐIP¶¼´æÔÚRTT¶ª°ü
-echo ¼ÌÐøÐÂµÄRTT²âÊÔ
+echo ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½IPï¿½ï¿½ï¿½ï¿½ï¿½ï¿½RTTï¿½ï¿½ï¿½ï¿½
+echo ï¿½ï¿½ï¿½ï¿½ï¿½Âµï¿½RTTï¿½ï¿½ï¿½ï¿½
 goto start
 )
 )
-echo ´ý²âËÙµÄIPµØÖ·
+echo ï¿½ï¿½ï¿½ï¿½ï¿½Ùµï¿½IPï¿½ï¿½Ö·
 for /f "tokens=1,2 delims= " %%i in ('sort rtt.txt') do (
-echo %%j Íù·µÑÓ³Ù %%i ºÁÃë
+echo %%j ï¿½ï¿½ï¿½ï¿½ï¿½Ó³ï¿½ %%i ï¿½ï¿½ï¿½ï¿½
 )
-title Æô¶¯²âËÙ
+title ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 set /a a=0
 for /f "tokens=1,2 delims= " %%i in ('sort rtt.txt') do (
 del CRLF.txt cut.txt speed.txt > nul 2>&1
 set avgms=%%i
 set anycast=%%j
-echo ÕýÔÚ²âÊÔ !anycast!
+echo ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ !anycast!
 if !tls! EQU 1 (
 curl --resolve !domain!:443:!anycast! https://!domain!/!file! -o nul --connect-timeout 1 --max-time 10 > CR.txt 2>&1
 ) else (
@@ -268,7 +268,7 @@ set /a max=0
 for /f "tokens=1,2" %%i in ('type "speed.txt"') do (
 if %%i GEQ !max! set /a max=%%i
 )
-echo !anycast! ·åÖµËÙ¶È !max! kB/s
+echo !anycast! ï¿½ï¿½Öµï¿½Ù¶ï¿½ !max! kB/s
 if !max! GEQ !speed! goto end
 )
 goto start
@@ -282,7 +282,7 @@ if %time:~6,1% EQU 0 (set /a stopS=%time:~7,1%) else (set /a stopS=%time:~6,2%)
 set /a starttime=%startH%*3600+%startM%*60+%startS%
 set /a stoptime=%stopH%*3600+%stopM%*60+%stopS%
 if %starttime% GTR %stoptime% (set /a alltime=86400-%starttime%+%stoptime%) else (set /a alltime=%stoptime%-%starttime%)
-echo ´Ó·þÎñÆ÷»ñÈ¡ÏêÏ¸ÐÅÏ¢
+echo ï¿½Ó·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½Ï¸ï¿½ï¿½Ï¢
 if !tls! EQU 1 (
 curl --resolve !domain!:443:!anycast! --retry 1 -s https://!domain!/cdn-cgi/trace -o data.txt --connect-timeout 2 --max-time 3
 ) else (
@@ -294,8 +294,8 @@ curl -x [!anycast!]:80 --retry 1 -s http://!domain!/cdn-cgi/trace -o data.txt --
 )
 cls
 if not exist "data.txt" (
-set publicip=»ñÈ¡³¬Ê±
-set colo=»ñÈ¡³¬Ê±
+set publicip=ï¿½ï¿½È¡ï¿½ï¿½Ê±
+set colo=ï¿½ï¿½È¡ï¿½ï¿½Ê±
 ) else (
 for /f "tokens=2 delims==" %%i in ('findstr "ip=" data.txt') do (
 set publicip=%%i
@@ -309,17 +309,17 @@ set colo=%%i
 )
 del rtt.txt data.txt CR.txt CRLF.txt cut.txt speed.txt > nul 2>&1
 RD /S /Q rtt > nul 2>&1
-title ÓÅÑ¡IPÒÑ¾­×Ô¶¯¸´ÖÆµ½¼ôÌù°å
-echo ÓÅÑ¡IP !anycast!
-echo ¹«ÍøIP !publicip!
-if !tls! EQU 1 (echo Ö§³Ö¶Ë¿Ú 443 2053 2083 2087 2096 8443) else (echo Ö§³Ö¶Ë¿Ú 80 8080 8880 2052 2082 2086 2095)
-echo ÉèÖÃ¿í´ø !bandwidth! Mbps
-echo Êµ²â´ø¿í !realbandwidth! Mbps
-echo ·åÖµËÙ¶È !max! kB/s
-echo Íù·µÑÓ³Ù !avgms! ºÁÃë
-echo Êý¾ÝÖÐÐÄ !colo!
-echo ×Ü¼ÆÓÃÊ± !alltime! Ãë
+title ï¿½ï¿½Ñ¡IPï¿½Ñ¾ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+echo ï¿½ï¿½Ñ¡IP !anycast!
+echo ï¿½ï¿½ï¿½ï¿½IP !publicip!
+if !tls! EQU 1 (echo Ö§ï¿½Ö¶Ë¿ï¿½ 443 2053 2083 2087 2096 8443) else (echo Ö§ï¿½Ö¶Ë¿ï¿½ 80 8080 8880 2052 2082 2086 2095)
+echo ï¿½ï¿½ï¿½Ã¿ï¿½ï¿½ï¿½ !bandwidth! Mbps
+echo Êµï¿½ï¿½ï¿½ï¿½ï¿½ !realbandwidth! Mbps
+echo ï¿½ï¿½Öµï¿½Ù¶ï¿½ !max! kB/s
+echo ï¿½ï¿½ï¿½ï¿½ï¿½Ó³ï¿½ !avgms! ï¿½ï¿½ï¿½ï¿½
+echo ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ !colo!
+echo ï¿½Ü¼ï¿½ï¿½ï¿½Ê± !alltime! ï¿½ï¿½
 
-echo °´ÈÎÒâ¼ü¹Ø±Õ´°¿Ú
+echo ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø±Õ´ï¿½ï¿½ï¿½
 pause > nul
 goto :eof

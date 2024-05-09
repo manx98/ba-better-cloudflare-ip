@@ -417,28 +417,28 @@ fi
 function datacheck(){
 clear
 echo "如果这些下面这些文件下载失败,可以手动访问网址下载保存至同级目录"
-echo "https://www.baipiao.eu.org/cloudflare/colo 另存为 colo.txt"
-echo "https://www.baipiao.eu.org/cloudflare/url 另存为 url.txt"
-echo "https://www.baipiao.eu.org/cloudflare/ips-v4 另存为 ips-v4.txt"
-echo "https://www.baipiao.eu.org/cloudflare/ips-v6 另存为 ips-v6.txt"
+echo "https://www.manx98.shop/colo.txt 另存为 colo.txt"
+echo "https://www.manx98.shop/url.txt 另存为 url.txt"
+echo "https://www.manx98.shop/ips-v4.txt 另存为 ips-v4.txt"
+echo "https://www.manx98.shop/ips-v6.txt 另存为 ips-v6.txt"
 while true
 do
 	if [ ! -f "colo.txt" ]
 	then
 		echo "从服务器下载数据中心信息 colo.txt"
-		curl --retry 2 -s https://www.baipiao.eu.org/cloudflare/colo -o colo.txt
+		curl --retry 2 -s https://www.manx98.shop/colo.txt -o colo.txt
 	elif [ ! -f "url.txt" ]
 	then
 		echo "从服务器下载测速文件地址 url.txt"
-		curl --retry 2 -s https://www.baipiao.eu.org/cloudflare/url -o url.txt
+		curl --retry 2 -s https://www.manx98.shop/url.txt -o url.txt
 	elif [ ! -f "ips-v4.txt" ]
 	then
 		echo "从服务器下载IPV4数据 ips-v4.txt"
-		curl --retry 2 -s https://www.baipiao.eu.org/cloudflare/ips-v4 -o ips-v4.txt
+		curl --retry 2 -s https://www.manx98.shop/ips-v4.txt -o ips-v4.txt
 	elif [ ! -f "ips-v6.txt" ]
 	then
 		echo "从服务器下载IPV6数据 ips-v6.txt"
-		curl --retry 2 -s https://www.baipiao.eu.org/cloudflare/ips-v6 -o ips-v6.txt
+		curl --retry 2 -s https://www.manx98.shop/ips-v6.txt -o ips-v6.txt
 	else
 		break
 	fi
